@@ -1,4 +1,5 @@
 
+
 /* lãnh đạo */
 h1 {
     text-align: center;
@@ -39,24 +40,28 @@ h1 {
     margin-bottom: 12px;
     width: 220px;
     padding-right: 5px;
+    
 }
 
 .button-chucnang {
     display: flex;
     margin-top: 8px;
     justify-content: center;
+    
 }
 
 .button-chucnang span button{
     width: 100px;
     padding: 4px 4px;
     margin: 4px 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #696969;
 }
 
 /*  lãnh đạo */
 
 
-/* Kỷ Luật/Khen Thương */
+/* các nhân sự*/
 .header-ktkl {
     display: flex;
     justify-content: space-between;
@@ -69,6 +74,8 @@ h1 {
     border: none;
     height: 32px;
     color: var(--white-color);
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #999999;
 }
 
 .Them button,
@@ -78,12 +85,14 @@ h1 {
 
 .header-ktkl-input button:hover {
     cursor: pointer;
+    color: black;
+    border: 1px solid #999999;
 }
 
 .Tim input {
     font-size: 20px;
-    padding-left: 4px;
-    padding: 2px 0 2px 0;
+    padding: 0 4px;
+    width: 400px;
 }
 
 .Tim button {
@@ -104,8 +113,17 @@ h1 {
 
 .btn-input{
     border: none;
+    opacity: calc(75%);
     margin: 8px 4px;
     padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #999999;
+}
+
+.btn-input:hover {
+    opacity: calc(100%);
+    
 }
 
 .btn-input:nth-child(1){
@@ -124,10 +142,12 @@ h1 {
 /* Các Nhân Sự */
 .btn-quaylai{
     margin: 0 40px 0 40px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .btn-quaylai:last-child {
-    background-color: rgb(248, 167, 167);
+    background-color: rgb(241, 194, 194);
 }
 
 .btn-double {

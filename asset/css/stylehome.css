@@ -19,6 +19,7 @@ body{
     width: 220px;
     border: var(--border);
     background: var(--white-color);
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .bodyapp1{
@@ -26,6 +27,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 0 80px 0 80px;
+    
 }
 
 .bodyapp2 button{
@@ -34,6 +36,7 @@ body{
     width: 220px;
     border: var(--border);
     background: var(--white-color);
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .bodyapp2{
@@ -49,6 +52,7 @@ body{
     width: 220px;
     border: var(--border);
     background: var(--white-color);
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .foot{
@@ -75,5 +79,3 @@ button:hover{
     font-weight: 600;
     border-radius: var(--border-radius);
 }
-
-
