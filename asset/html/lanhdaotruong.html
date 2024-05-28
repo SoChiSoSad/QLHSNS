@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/reponsive.css">
+    <title>Lãnh đạo trường</title>
+</head>
+<body>
+    <h1>LÃNH ĐẠO TRƯỜNG - KỶ LUẬT VÀ KHEN THƯỞNG</h1>
+    <div class="container-form">
+        <div class="form-person">
+            <div class="form-person-box">
+                <label>ID</label>
+                <input type="text" id="fullname">
+                <br/>
+            
+                <label>Họ Tên</label>
+                <input type="text" id="fullname">
+                <br/>
+
+                <label>Chức Vụ</label>
+                <input type="text" id="fullname">
+                <br/>
+
+                <label>Đơn Vị</label>
+                <input type="text" id="fullname">
+                <br/>
+
+                <label>Thành Tích</label>
+                <input type="text" id="fullname">
+                <br/>
+
+                <label>Đánh Giá</label>
+                <input type="text" id="fullname">
+                <br/>
+            </div>
+
+            <div class="button-chucnang ">
+                <span>
+                    <button type="button" class="them">Thêm</button>
+                    <button type="button" class="xoa">Xóa</button>
+                    <button type="button" class="sua">Sửa</button>
+                </span>
+            </div>
+            <div class="button-chucnang ">
+                <span>
+                    <button type="button" onclick="Xemhoso()">Xem hồ sơ</button>
+                    <button type="button" onclick="quayve()"> Quay lại</button>
+                </span>
+            </div>
+                
+
+        </div>
+        <div class="table-input">
+            <Table border="1" class="list-table " width="800px" cellpadding="0" cellpadding="0">
+                <tr>
+                    <th>ID</th>
+                    <th>Họ Tên</th>
+                    <th>Phòng ban</th>
+                    <th>Thành tích</th>
+                    <th>Đánh Giá</th>
+                </tr>
+                
+            </Table>
+        </div>
+    </div>
+</body>
+<script>
+    function Xemhoso() {
+        window.location.href = './cacnhansu.html'
+    };
+    function quayve() {
+        window.location.href = './trang_home.html'
+    };
+</script>
+</html>

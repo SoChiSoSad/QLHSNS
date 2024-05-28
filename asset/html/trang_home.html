@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm 3</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/reponsive.css">
+    <link rel="stylesheet" href="../css/stylehome.css">
+
+    <!-- link icon -->
+    <link rel="stylesheet" href="../font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body>
+    <div class="head">
+        <p>Hệ thống quản lý hồ sơ nhân viên</p>
+    </div>
+    <div class="body">
+        <div class="bodyapp1">
+            <button onclick="phonglanhdao()"><i class="fa-solid fa-book-bookmark"></i> Phòng lãnh đạo</button>
+            <button onclick="lanhdaodonvi()"><i class="fa-solid fa-comments"></i> Lãnh đạo các đơn vị</button>
+            <button onclick="lanhdaotruong()"><i class="fa-solid fa-building-flag"></i> Lãnh đạo trường</button>
+        </div>
+        <div class="bodyapp2">
+            <button onclick="cacnhansu()"><i class="fa-solid fa-circle-user"></i> Các nhân sự</button>
+            <button onclick="thongke()"><i class="fa-solid fa-toolbox"></i> Thống kê</button>
+            <button onclick="helpme()"><i class="fa-solid fa-circle-question"></i> Trợ giúp</button>
+        </div>
+    </div>
+    
+    <div class="foot">
+        <button onclick="signout()"><i class="fa-solid fa-power-off"></i> Đăng xuất</button>
+    </div>
+
+    <script src="../JS/cacnhansu.js"></script>
+    <script src="../JS/lanhdaodonvi.js"></script>
+    <script src="../JS/phonglanhdao.js"></script>
+    <script src="../JS/trang_home.js"></script>
+
+</body>
+</html>

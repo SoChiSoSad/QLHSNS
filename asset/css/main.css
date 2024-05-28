@@ -1,0 +1,155 @@
+
+/* lãnh đạo */
+h1 {
+    text-align: center;
+    padding-top: 64px ;
+}
+.container-form {
+    display: flex;
+    padding: 54px 0;
+    margin: 0 12px;
+    justify-content: space-between;
+}
+
+.table-input-list {
+    min-width: 100%;
+}
+
+.list-table {
+    margin: 0 32px;
+}
+.list-table tr th{
+    padding: 2px;
+}
+
+.form-person {
+    min-width: 400px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-right: 12px;
+    padding: 8px 4px 20px 12px;
+}
+
+.form-person-box label {
+    width: 136px;
+    float: left;
+}
+
+.form-person-box input[type="text"] {
+    margin-bottom: 12px;
+    width: 220px;
+    padding-right: 5px;
+}
+
+.button-chucnang {
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.button-chucnang span button{
+    width: 100px;
+    padding: 4px 4px;
+    margin: 4px 8px;
+}
+
+/*  lãnh đạo */
+
+
+/* Kỷ Luật/Khen Thương */
+.header-ktkl {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 152px 0 152px;
+}
+
+.header-ktkl-input button {
+    font-size: 20px;
+    background: var(--green);
+    border: none;
+    height: 32px;
+    color: var(--white-color);
+}
+
+.Them button,
+.QuayLai button {
+    width: 120px;
+}
+
+.header-ktkl-input button:hover {
+    cursor: pointer;
+}
+
+.Tim input {
+    font-size: 20px;
+    padding-left: 4px;
+    padding: 2px 0 2px 0;
+}
+
+.Tim button {
+    width: 64px;
+}
+
+.table-ktkl {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.table-ktkl tr th:first-child{
+    padding: 4px;
+}
+
+.btn-input{
+    border: none;
+    margin: 8px 4px;
+    padding: 4px 8px;
+}
+
+.btn-input:nth-child(1){
+    background: aqua;
+}
+
+.btn-input:nth-child(2){
+    background: orange;
+}
+.btn-input:nth-child(3){
+    background: red;
+}
+/* Kết thúc Kỷ Luật/Khen Thương  */
+
+
+/* Các Nhân Sự */
+.btn-quaylai{
+    margin: 0 40px 0 40px;
+}
+
+.btn-quaylai:last-child {
+    background-color: rgb(248, 167, 167);
+}
+
+.btn-double {
+    display: flex;
+    justify-content: space-between;
+}
+.table-cns {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-cns tr th{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+/* Kết thúc các nhân sự */
+
+/* trợ giúp*/
+.btn-trogiup {
+    float: right;
+}
+/* kết thúc trợ giúp */
