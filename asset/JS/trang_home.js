@@ -28,49 +28,30 @@ function tranghome() {
 function back() {
     window.location.href = "../html/lanhdaodonvi.html";
 }
-function signout(){
-    window.location.href = "#";
+// function signout(){
+//     window.location.href = "../html/login.html";
+// }
+
+
+// đăng xuất tài khoản
+
+function signout() {
+    sessionStorage.setItem('signedOut', 'true');
+    window.location.href = "../html/login.html";
 }
 
+// Kiểm tra nếu trạng thái đăng xuất đã được lưu và ngăn người dùng quay lại
+window.onload = function() {
+    if (sessionStorage.getItem('signedOut')) {
+        // Xóa trạng thái đăng xuất để ngăn chặn việc chuyển hướng lại khi làm mới trang
+        sessionStorage.removeItem('signedOut');
+        // Chuyển hướng đến trang đăng nhập nếu trạng thái đăng xuất đã được lưu
+        window.location.href = "../html/login.html";
+    }
+}
 
-
-// // đăng xuất 
-// const express = require('express');
-// const app = express();
-
-// app.post('/api/logout', (req, res) => {
-//     // Xử lý đăng xuất tại đây (ví dụ: hủy session, xóa cookie)
-//     req.session.destroy(err => {
-//         if (err) {
-//             return res.status(500).json({ message: 'Đăng xuất thất bại.' });
-//         }
-//         res.clearCookie('connect.sid'); // Tên cookie session có thể khác
-//         res.status(200).json({ message: 'Đăng xuất thành công.' });
-//     });
-// });
-
-// app.listen(3000, () => {
-//     console.log('Server is running on port 3000');
-// });
-// function signout() {
-//     // Gửi yêu cầu đăng xuất đến server
-//     fetch('/api/logout', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         }
-//     })
-//     .then(response => {
-//         if (response.ok) {
-//             // Đăng xuất thành công, chuyển hướng về trang đăng nhập
-//             window.location.href = '../html/';
-//         } else {
-//             // Xử lý lỗi nếu có
-//             console.error('Đăng xuất thất bại.');
-//         }
-//     })
-//     .catch(error => {
-//         console.error('Có lỗi xảy ra:', error);
-//     });
-// }
-// // kết thúc chương trình đăng xuất
+// Ngăn người dùng sử dụng nút back trong trình duyệt
+history.pushState(null, null, location.href);
+window.onpopstate = function () {
+    history.go(1);
+};
