@@ -14,10 +14,6 @@ function cacnhansu(){
     window.location.href = "../html/cacnhansu.html";
 }
 
-function thongke(){
-    window.location.href = "../html/thongke.html";
-}
-
 function helpme(){
     window.location.href = "../html/trogiup.html";
 }
@@ -28,9 +24,6 @@ function tranghome() {
 function back() {
     window.location.href = "../html/lanhdaodonvi.html";
 }
-// function signout(){
-//     window.location.href = "../html/login.html";
-// }
 
 
 // đăng xuất tài khoản
