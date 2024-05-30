@@ -91,10 +91,12 @@ function showButtonsForUserRole(userRole) {
             });
             document.getElementById('lanhdaodonvi').addEventListener('click', function(event) {
                 event.preventDefault();
+                window.location.href = '../html/trang_home.html'
                 alert('Bạn không có quyền truy cập vào Lãnh đạo các đơn vị!');
             });
             document.getElementById('lanhdaotruong').addEventListener('click', function(event) {
                 event.preventDefault();
+                window.location.href = '../html/trang_home.html'
                 alert('Bạn không có quyền truy cập vào Lãnh đạo trường!');
             });
             break;
