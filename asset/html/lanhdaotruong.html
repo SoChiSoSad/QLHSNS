@@ -14,7 +14,7 @@
         <div class="form-person">
             <div class="form-person-box">
                 <label>ID</label>
-                <input type="text" id="fullname">
+                <input type="text" id="ID">
                 <br/>
             
                 <label>Họ Tên</label>
@@ -22,20 +22,24 @@
                 <br/>
 
                 <label>Chức Vụ</label>
-                <input type="text" id="fullname">
+                <input type="text" id="Chucvu">
                 <br/>
 
                 <label>Đơn Vị</label>
-                <input type="text" id="fullname">
+                <input type="text" id="DonVi">
                 <br/>
 
                 <label>Thành Tích</label>
-                <input type="text" id="fullname">
+                <input type="text" id="ThanhTich">
                 <br/>
 
                 <label>Đánh Giá</label>
-                <input type="text" id="fullname">
+                <input type="text" id="DanhGia">
                 <br/>
+
+                <label>Kiểm Duyệt</label>
+                <input type="checkbox" id="good" value="1"> hoàn thành
+                <input type="checkbox" id="ungood" value="0"> chưa hoàn thành
             </div>
 
             <div class="button-chucnang ">
@@ -47,7 +51,6 @@
             </div>
             <div class="button-chucnang ">
                 <span>
-                    <button type="button" onclick="Xemhoso()">Xem hồ sơ</button>
                     <button type="button" onclick="quayve()"> Quay lại</button>
                 </span>
             </div>
@@ -62,16 +65,13 @@
                     <th>Phòng ban</th>
                     <th>Thành tích</th>
                     <th>Đánh Giá</th>
+                    <th>Kiểm duyệt</th>
                 </tr>
-                
             </Table>
         </div>
     </div>
 </body>
 <script>
-    function Xemhoso() {
-        window.location.href = './cacnhansu.html'
-    };
     function quayve() {
         window.location.href = './trang_home.html'
     };
