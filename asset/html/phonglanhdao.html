@@ -61,9 +61,16 @@
                 <input type="text" id="note">
                 <br/>
 
+                <label for="username">Tài khoản</label>
+                <input type="text" id="username">
+                <br/>
+                <label for="password">Mật khẩu</label>
+                <input type="text" id="password">
+                <br/>
+
                 <label>Giới tính</label>
-                <input type="radio" id="male" name="gender" value="1"> Nam
-                <input type="radio" id="female" name="gender" value="0"> Nữ
+                <input type="radio" id="male" name="gender" value="1" for="male"> Nam
+                <input type="radio" id="female" name="gender" value="0" for="female"> Nữ
             </div>
 
             <div class="button-chucnang">
@@ -85,7 +92,7 @@
             <table border="1" class="list-table" cellpadding="0" cellpadding="0">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>STT</th>
                         <th>Họ Tên</th>
                         <th>Ngày Sinh</th>
                         <th>Giới Tính</th>
@@ -98,6 +105,8 @@
                         <th>Mức Lương</th>
                         <th>Ngày Bắt Đầu</th>
                         <th>Ghi chú</th>
+                        <th>Tài khoản</th>
+                        <th>Mật khẩu</th>
                     </tr>
                 </thead>
                 <tbody id="table-body">
@@ -107,7 +116,7 @@
         </div>
     </div>
 
-    <script src="../JS/phonglanhdao.js"></script>
+    
 </body>
-
+<script src="../JS/phonglanhdao.js"></script>
 </html>
