@@ -37,13 +37,14 @@
 
             <div class="button-chucnang ">
                 <span>
-                    <button type="button" class="them">Thêm</button>
-                    <button type="button" class="xoa">Xóa</button>
-                    <button type="button" class="sua">Sửa</button>
+                    <button type="button" class="them" onclick="them()">Thêm</button>
+                    <button type="button" class="xoa" onclick="xoa()">Xóa</button>
+                    <button type="button" class="sua" onclick="sua()">Sửa</button>
                 </span>
             </div>
             <div class="button-chucnang ">
                 <span>
+                    <button type="button" class="refresh" onclick="refresh()">refresh</button>
                     <button type="button" onclick="quayve()"> Quay lại</button>
                 </span>
             </div>
@@ -64,9 +65,5 @@
         </div>
     </div>
 </body>
-<script>
-    function quayve() {
-        window.location.href = './trang_home.html'
-    };
-</script>
+<script src="../JS/lanhdaodonvi.js"></script>
 </html>
