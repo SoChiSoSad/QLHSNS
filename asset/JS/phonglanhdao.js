@@ -120,6 +120,7 @@ function addData() {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
+        console.log(response);
         return response.text(); // Đọc phản hồi như văn bản
     })
     .then(data => {
