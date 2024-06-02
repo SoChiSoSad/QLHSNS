@@ -136,10 +136,8 @@ h1 {
 .btn-input:nth-child(3){
     background: red;
 }
-/* Kết thúc Kỷ Luật/Khen Thương  */
 
-
-/* Các Nhân Sự */
+/* Các Nhân Sự 2 */
 .btn-quaylai{
     margin: 0 40px 0 40px;
     cursor: pointer;
@@ -165,6 +163,19 @@ h1 {
 .table-cns tr th{
     padding-top: 4px;
     padding-bottom: 4px;
+}
+
+.nav-cns {
+    width: 400px;
+    height: 160px;
+    margin-top: 20px;
+    padding-left: 16px;
+    padding-top: 16px;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 4px #696969;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 /* Kết thúc các nhân sự */
 
