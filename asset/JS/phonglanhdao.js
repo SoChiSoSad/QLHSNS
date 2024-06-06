@@ -172,7 +172,6 @@ function deleteData() {
 }
 
 function refreshData() {
-    fetchData();
     resetForm();
 }
 
@@ -209,8 +208,8 @@ function getUserFormData() {
         salary_level: document.getElementById('salary_level').value,
         date_start_work: document.getElementById('date_start_work').value,
         note: document.getElementById('note').value,
-        taikhoan: document.getElementById('username').value,
-        matkhau: document.getElementById('password').value,
+        username: document.getElementById('username').value,
+        password: document.getElementById('password').value,
         gender: document.querySelector('input[name="gender"]:checked').value
     };
 }
