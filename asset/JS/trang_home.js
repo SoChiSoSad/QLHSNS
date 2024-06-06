@@ -109,4 +109,3 @@ function showButtonsForUserRole(userRoles) {
         alert('Vai trò của bạn không được hỗ trợ!'); // Thông báo vai trò không được hỗ trợ
     }
 }
-
