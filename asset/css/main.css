@@ -183,4 +183,8 @@ h1 {
 .btn-trogiup {
     float: right;
 }
+.helpme {
+    display: flex;
+    flex-wrap: wrap;
+}
 /* kết thúc trợ giúp */

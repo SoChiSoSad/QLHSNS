@@ -62,47 +62,51 @@ document.getElementById('signout').addEventListener('click', function() {
     window.location.href = '../html/login.html'; // Chuyển hướng người dùng đến trang đăng nhập
 });
 
-// Lấy vai trò của người dùng từ localStorage
-const userRole = localStorage.getItem('Role');
+
+
+
+// Lấy vai trò của người dùng từ localStorage và chuyển đổi từ chuỗi JSON thành mảng
+const userRoles = JSON.parse(localStorage.getItem('Role'));
 
 // Gọi hàm để hiển thị các nút tương ứng với vai trò của người dùng
-showButtonsForUserRole(userRole);
+showButtonsForUserRole(userRoles);
 
 // Hàm hiển thị các nút tương ứng với vai trò của người dùng
-function showButtonsForUserRole(userRole) {
-    switch (userRole) {
-        case 'admin':
-            break; // Không cần thay đổi gì vì admin có quyền truy cập vào tất cả các nút
-        case 'leader':
-            // Chặn sự kiện click của nút phonglanhdao
-            document.getElementById('phonglanhdao').addEventListener('click', function(event) {
-                event.preventDefault(); // Ngăn chặn hành vi mặc định
-                window.location.href = '../html/trang_home.html'; // Chuyển hướng về trang chủ
-                alert('Bạn không có quyền truy cập vào Phòng lãnh đạo!'); // Thông báo không có quyền truy cập
-            });
-            break;
-        case 'personnel':
-            // Chặn sự kiện click của nút phonglanhdao
-            document.getElementById('phonglanhdao').addEventListener('click', function(event) {
-                event.preventDefault(); // Ngăn chặn hành vi mặc định
-                window.location.href = '../html/trang_home.html'; // Chuyển hướng về trang chủ
-                alert('Bạn không có quyền truy cập vào Phòng lãnh đạo!'); // Thông báo không có quyền truy cập
-            });
-            // Chặn sự kiện click của nút lanhdaodonvi
-            document.getElementById('lanhdaodonvi').addEventListener('click', function(event) {
-                event.preventDefault(); // Ngăn chặn hành vi mặc định
-                window.location.href = '../html/trang_home.html'; // Chuyển hướng về trang chủ
-                alert('Bạn không có quyền truy cập vào Lãnh đạo các đơn vị!'); // Thông báo không có quyền truy cập
-            });
-            // Chặn sự kiện click của nút lanhdaotruong
-            document.getElementById('lanhdaotruong').addEventListener('click', function(event) {
-                event.preventDefault(); // Ngăn chặn hành vi mặc định
-                window.location.href = '../html/trang_home.html'; // Chuyển hướng về trang chủ
-                alert('Bạn không có quyền truy cập vào Lãnh đạo trường!'); // Thông báo không có quyền truy cập
-            });
-            break;
-        default:
-            alert('Vai trò của bạn không được hỗ trợ!'); // Thông báo vai trò không được hỗ trợ
-            break;
+function showButtonsForUserRole(userRoles) {
+    // Kiểm tra từng vai trò của người dùng
+    if (userRoles.includes('admin')) {
+        // Admin có quyền truy cập vào tất cả các nút, không cần làm gì
+        return;
+    }
+
+    if (!userRoles.includes('leader')) {
+        // Chặn sự kiện click của nút phonglanhdao nếu người dùng không phải là leader
+        document.getElementById('phonglanhdao').addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn chặn hành vi mặc định
+            window.location.href = '../html/trang_home.html'; // Chuyển hướng về trang chủ
+            alert('Bạn không có quyền truy cập vào Phòng lãnh đạo!'); // Thông báo không có quyền truy cập
+        });
+    }
+
+    if (!userRoles.includes('personnel')) {
+        // Chặn sự kiện click của nút lanhdaodonvi nếu người dùng không phải là personnel
+        document.getElementById('lanhdaodonvi').addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn chặn hành vi mặc định
+            window.location.href = '../html/trang_home.html'; // Chuyển hướng về trang chủ
+            alert('Bạn không có quyền truy cập vào Lãnh đạo các đơn vị!'); // Thông báo không có quyền truy cập
+        });
+
+        // Chặn sự kiện click của nút lanhdaotruong nếu người dùng không phải là personnel
+        document.getElementById('lanhdaotruong').addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn chặn hành vi mặc định
+            window.location.href = '../html/trang_home.html'; // Chuyển hướng về trang chủ
+            alert('Bạn không có quyền truy cập vào Lãnh đạo trường!'); // Thông báo không có quyền truy cập
+        });
+    }
+
+    // Thông báo vai trò không được hỗ trợ nếu người dùng không có vai trò hợp lệ
+    if (!userRoles.includes('admin') && !userRoles.includes('leader') && !userRoles.includes('personnel')) {
+        alert('Vai trò của bạn không được hỗ trợ!'); // Thông báo vai trò không được hỗ trợ
     }
 }
+
