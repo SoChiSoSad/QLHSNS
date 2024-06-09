@@ -9,9 +9,6 @@ h1 {
     display: flex;
     padding: 54px 0;
     margin: 0 12px;
-    justify-content: space-between;
-    margin-left: 340px;
-    text-align: center;
 }
 
 .table-input-list {
@@ -29,7 +26,7 @@ h1 {
     min-width: 400px;
     border: 1px solid #000;
     border-radius: 4px;
-    margin-right: 12px;
+    margin-right: 24px;
     padding: 8px 4px 20px 12px;
 }
 
@@ -94,13 +91,13 @@ th, td {
 .button-xoa{
     background: red;    
 }
-/*  lãnh đạo */
+
+/* kết thúc lãnh đạo */
 
 
 /* các nhân sự*/
 .header-ktkl {
     display: flex;
-    justify-content: space-between;
     margin: 32px 152px 0 152px;
 }
 
@@ -114,9 +111,9 @@ th, td {
     box-shadow: 2px 2px 2px #999999;
 }
 
-.Them button,
 .QuayLai button {
     width: 120px;
+    margin: 0 190px;
 }
 
 .header-ktkl-input button:hover {
@@ -151,7 +148,7 @@ th, td {
     border: none;
     opacity: calc(75%);
     margin: 8px 4px;
-    padding: 4px 8px;
+    padding: px4px 8px;
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 2px 2px 2px #999999;
@@ -172,9 +169,6 @@ th, td {
 
 .btn-input:nth-child(2){
     background: orange;
-}
-.btn-input:nth-child(3){
-    background: red;
 }
 
 /* Các Nhân Sự 2 */
@@ -207,15 +201,19 @@ th, td {
 
 .nav-cns {
     width: 400px;
-    height: 160px;
+    height: 196px;
     margin-top: 20px;
     padding-left: 16px;
     padding-top: 16px;
     border: 1px solid #ccc;
     box-shadow: 4px 4px 4px #696969;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto; 
+}
+.them{
+    margin-left: 168px;
+    font-size: 16px;
+    background: #fc9393;
 }
 /* Kết thúc các nhân sự */
 

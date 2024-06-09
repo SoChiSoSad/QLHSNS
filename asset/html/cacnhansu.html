@@ -16,15 +16,12 @@
 <body>
     <h1>Các Nhân Sự Báo Cáo</h1>
     <div class="header-ktkl">
-        <div class="header-ktkl-input Them">
-           <button>Thêm</button>
+        <div class="header-ktkl-input QuayLai">
+            <button onclick="tranghome()">Quay Lại</button>
         </div>
         <div class="header-ktkl-input Tim">
             <input type="text" placeholder="Tìm kiếm tên báo cáo, tạp chí...">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="header-ktkl-input QuayLai">
-            <button onclick="tranghome()">Quay Lại</button>
         </div>
     </div>
 
@@ -44,6 +41,8 @@
         <label>Tạp chí</label>
         <input type="text" id="fullname">
         <br/>
+
+        <input class="btn-input them" type="button" value="Thêm">
         <br/>
 
     </div>
@@ -64,7 +63,6 @@
                     <td></td>
                     <td></td>
                     <th>
-                        <input class="btn-input" type="button" value="Lưu">
                         <input class="btn-input" type="button" value="Sửa">
                         <input class="btn-input" type="button" value="Xóa">
                     </th>
